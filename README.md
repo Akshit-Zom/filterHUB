@@ -1,4 +1,5 @@
 # FilterHub
+![Screenshot 2023-08-23 065300](https://github.com/Akshit-Zom/filterHUB/assets/124908941/39f111c4-d022-446e-81a4-a44835ec366c)
 
 Welcome to **FilterHub**, an innovative platform for personalized educational content! FilterHub is designed to provide users with short, focused, and engaging information on their preferred topics. Whether you're a student, professional, or simply someone who loves to learn, FilterHub aims to deliver an exceptional learning experience.
 
