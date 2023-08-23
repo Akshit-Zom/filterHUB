@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@200&family=Roboto+Mono:wght@200&display=swap');
+
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+
+}
+body{
+    display: flex;
+     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: radial-gradient(#552a99,#14031a);
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#000000cc), to(#552a99)) fixed; */
+
+}
+
+ .main-class{
+  padding-top: 20px;
+    display: inline-block;
+    column-count: 3;
+    position: absolute;
+    font-size: 40px;
+ 
+    margin-left: 70px;
+   
+ 
+} 
+.main-class .subclass{
+
+        color: white;    
+        display: block;  
+        position:relative;
+        width: 235px;
+        height: 225px;
+        background-color: #00000065;  
+        border: 1px solid #ffff;
+        margin-bottom: 25px;
+        left: 100%;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease-in-out; 
+        border-radius: 15px;
+        overflow: hidden;
+        perspective: 1px;
+        
+    } 
+       
+    .sub-class-img{
+      height: 225px;
+      width: 235px;
+      transition: filter 0.1s ease-in;
+   }
+ 
+    .main-class .subclass:hover {
+        transform: scale(1.1); 
+        box-shadow: 0 0 10px rgba(255,255,255,0.7); 
+       
+    }
+    .subclass:hover {
+        transform: scale(1.1); 
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+        filter: blur(0px); 
+        border-radius: 6px;
+      }
+      
+      .main-class:hover .subclass:not(:hover) {
+        filter: blur(1px); 
+        opacity: 0.4;
+      }
+      .sub-class-txt{
+        position: absolute;
+        padding-left: 5px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgb(60, 7, 103), rgba(0, 0, 0, 0));
+        height: 130px;
+        overflow: hidden;
+        height: 0;
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        white-space: nowrap;
+        transition: .5s ease-in-out;
+        font-weight: bold;
+        
+        margin: 0;
+        }
+    .subclass:hover .sub-class-txt{
+        height: 40%;
+        opacity: 1;
+    } 
+    .sub-class-img:hover{
+      filter: blur(6px); 
+
+    }
+    footer{
+      margin-top: 70%;
+      z-index: 0;
+    }
+   main{
+    margin-left: 48px;
+   }   
+.navbar{
+  z-index: 10;
+}

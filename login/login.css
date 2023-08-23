@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat:wght@200&family=Poppins:wght@200&family=Roboto+Mono:wght@200&display=swap');
+*{
+    margin :0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#542a98,#0c0714);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+}
+.form-box{
+width: 90%;
+max-width: 450px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #ffffff;
+padding: 50px 60px 70px;
+text-align: center;
+
+box-shadow: 0 0 10px 0 rgba(68, 68, 68, 0.5);
+
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+     font-size: 30px;
+    background: -webkit-linear-gradient(#a166ff,#41246f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center; 
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i {
+    margin-left: 15px;
+    color: grey;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+
+}
+form p a{
+    text-decoration: none;
+    color: #6432b5;
+    font-weight: bold;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+     
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background-color: rgba(114, 38, 186, 0.585);
+    color: black;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    
+}
+.input-group{
+    height: 280px;
+}
+.btn-field button.disable{
+    background-color: rgb(213, 213, 213);
+    color: rgb(141, 141, 141);
+}
+button { 
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+  
+  button:hover {
+    transform: scale(1.05);
+}
+
+.input-field{ 
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+  
+  .input-field:hover {
+    transform: scale(1.05);
+}
+h1 { 
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+  
+  h1:hover {
+    transform: scale(1.05);
+}
+
+  

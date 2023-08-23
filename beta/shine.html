@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contents="IE-edge">
+    <meta name="viewport" content ="width=device-width,
+    initial-scale-1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+        }
+        h1{
+            color: hsl(0, 0%, 100%);
+            font-size: 50px;
+            font-weight: lighter;
+            font-family:monospace;
+            letter-spacing: 7px;
+            cursor: pointer;
+            background: linear-gradient(to right,
+             hsl(0, 0%, 30%) 0,
+             hsl(140, 99%, 49%)5%, 
+             hsl(0, 0%, 30%)20%
+             );
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+             animation: shine 3s infinite linear;
+             padding: 55px;
+        }
+        h1:hover span:nth-child(1){
+            margin-block: 5px;
+        }
+       
+        h1:hover span:nth-child(2){
+            margin-block: 1px;
+        }
+        h1:hover span{
+            color: hsl(0, 0%, 30%);
+            text-shadow: 0 0 0px hsl(0, 0%, 100%),
+             0 0 0px hsl(0, 0%, 100%),
+             0 0 0px hsl(0, 0%, 100%);
+    
+        }
+        h1 span{
+            transition: 0.5s ease-in-out;
+        }
+        @keyframes shine {
+            0% {
+                background-position: 0;
+            }
+            60%{
+                background-position: 400px;
+            }
+            100%{
+                background-position: 400px;
+            }
+        }     
+        
+
+        
+
+ </style>
+</head>
+<body>
+    <h1><span>filterHUB</span></h1>
+    <script classs>
+        const h1 = document.querySelector('h1');
+        h1.addEventListener('click', function() {
+            let count = 0;
+            let interval = setInterval(function() {
+                count++;
+                if (count === 20) {
+                    clearInterval(interval);
+                    h1.innerHTML = "<span>Learn</span> <span>Better</span>";
+                }
+               h1.style.transform = "translateX(" + (count * 2) + "px)";
+            }, 20);
+        });
+    </script>
+    <!-- <script>
+        const h1 = document.querySelector('h1');
+      
+        let timer;
+        h1.addEventListener('mouseover', function() {
+          timer = setTimeout(function() {
+            h1.innerHTML = "<span>Learn</span> <span>Better</span>";
+            h1.style.transition = "all 0.5s ease-in-out";
+            h1.style.opacity = 0;
+            setTimeout(function() {
+              h1.style.opacity = 1;
+            }, 500);
+          }, 2000);
+        });
+        h1.addEventListener('mouseout', function() {
+          clearTimeout(timer);
+        });
+      </script> -->
+      
+</body>
+</html>
